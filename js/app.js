@@ -1,9 +1,9 @@
 // Espera a que el documento HTML esté completamente cargado
 document.addEventListener("DOMContentLoaded", function () {
-    // Reemplaza con tu API key de theMealDB
+    // Aquí utulizo la key que me da la API de theMealDB para poder usarla
     const apiKey = "1";
     
-    // Obtiene los elementos del DOM
+    // Estas constantes obtienen los elementos del DOM
     const searchInput = document.getElementById("search");
     const submitButton = document.getElementById("btnEviar");
     const resultsContainer = document.getElementById("results-container");
