@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     } else {
                         resultsContainer.innerHTML = "No se encontraron recetas.";
                         // clase "error" al elemento resultContainer
+                        resultsContainer.classList.add("error");
                     }
                 })
                 .catch(function (error) {

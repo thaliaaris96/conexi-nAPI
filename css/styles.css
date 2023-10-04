@@ -7,9 +7,6 @@
 
 /* Estilos para el body */
 body {
-    /* Establece una imagen de fondo */
-    background-image: url(img/miti-qYreP9QOdrk-unsplash\ \(1\).jpg);
-    background-size: cover;
     /* Establece la fuente del texto */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
      /*Flexbox para alinear los elementos verticalmente */
@@ -20,6 +17,12 @@ body {
 
 /* Estilos para el contenido principal */
 main {
+    /* Establece una imagen de fondo */
+    background-image: url(img/miti-qYreP9QOdrk-unsplash\ \(1\).jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     /*Flexbox para alinear los elementos verticalmente */
     flex: 1 0 auto;
     display: flex;
@@ -32,13 +35,15 @@ main {
 /* Estilos para el título principal */
 main > h1 {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     background-color: rgba(0, 0, 0, 0.658);
 }
 
 /* Estilos para el título de resultados */
 h3 {
     text-align: center;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.658);
     color: rgb(89, 224, 10);
 }
 
@@ -82,6 +87,7 @@ main p {
     margin-top: 10%;
     padding: 10px;
     margin-bottom: 50%;
+    background-color: transparent;
 }
 
 .results-container {
@@ -90,7 +96,7 @@ main p {
     justify-content: center;
 }
 
-* Estilos para cada elemento dentro del contenedor de resultados */
+/* Estilos para cada elemento dentro del contenedor de resultados */
 .results-container > div {
     flex: 0 0 calc(50% - 20px);
     margin: 10px;
@@ -115,8 +121,8 @@ main p {
 
 /* Estilos para el mensaje de error */
 .error {
-    color: darkred;
-    font-size: 25px;
+    color: whitesmoke;
+    font-size: 35px;
 }
 
 /* Estilos para el pie de página */
