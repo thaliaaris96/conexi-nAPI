@@ -16,7 +16,7 @@ libre, aunque se recomendaron algunas para que fuera más fácil su uso.</p>
 </div>
 <div>
 <h2>Para accdeder a la página haz click aquí</h2>
-<ul>
-<li><a>https://thaliaaris96.github.io/conexion-API/</a></li>
-</ul>
+
+https://thaliaaris96.github.io/conexion-API/
+
 </div>
