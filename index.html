@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conexión API EXterna</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Enlace al archivo CSS -->
 </head>
 
 <body>
@@ -13,22 +13,21 @@
         <h1>Busca recetas con theMealDB</h1>
         <p>Esta págia es meramente ilustrativa, fue hecha con fines educativos</p>
         <section>
-            <h4>Todas las recetas que quieras las puedes encontrar aquí (Buscalas en inglés)</h4>
+            <p>Todas las recetas que quieras, las puedes encontrar aquí (Búscalas en inglés ya
+                sea por su nombre o un ingrediente Ej: chicken)</p>
             <div id="controls-content">
                 <input type="search" id="search" placeholder="Buscar recetas">
                 <input type="submit" id="btnEviar" value="Buscar">
             </div>
         </section>
         <section>
-                <div id="results-container">
-                    <h4>Resultados de la búsqueda</h4>
-                </div>
+            <h3>Resultados de la búsqueda</h3>
+            <div id="results-container" class="results-container"></div>
         </section>
         <footer>
             <p>Copyright JAP &copy; 2023</p>
         </footer>
     </main>
-    <script src="js/app.js"></script>
+    <script src="js/app.js"></script> <!-- Script JavaScript -->
 </body>
-
 </html>

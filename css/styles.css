@@ -1,74 +1,160 @@
+/* Estilo general */
+/*Margen y relleno en 0 para todos los elementos */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* Estilos para el body */
 body {
-    background-image: url(img/debbie-tea-LO7rNP0LRro-unsplash.jpg);
+    /* Establece una imagen de fondo */
+    background-image: url(img/miti-qYreP9QOdrk-unsplash\ \(1\).jpg);
     background-size: cover;
+    /* Establece la fuente del texto */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     /*Flexbox para alinear los elementos verticalmente */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
+
+/* Estilos para el contenido principal */
 main {
+    /*Flexbox para alinear los elementos verticalmente */
+    flex: 1 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 5%;
-    color: tomato;
+    color: rgb(89, 224, 10);
 }
 
+/* Estilos para el título principal */
 main > h1 {
     text-align: center;
     font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.658);
 }
 
-main > h4 {
+/* Estilos para el título de resultados */
+h3 {
     text-align: center;
-    font-size: 20px;
-    padding: 25px;
+    color: rgb(89, 224, 10);
 }
 
-main > p {
+/* Estilos para el párrafo */
+main p {
     text-align: center;
     font-size: 20px;
     margin-bottom: 30px;
-    margin-top: 10%;
-
+    margin-top: 5%;
+    background-color: rgba(0, 0, 0, 0.603);
 }
 
+/* Estilos para el campo de búsqueda */
 #search {
     padding: 5px;
     font-size: 20px;
     border-radius: 5px;
     margin: 10px;
-
+    width: 100%;
 }
 
+/* Estilos para el botón de enviar */
 #btnEviar {
     padding: 5px;
     font-size: 20px;
+    padding: 10px 5%;
     border-radius: 5px;
     margin: 10px;
     cursor: pointer;
 }
 
+/* Estilos para el botón de enviar cuando se pasa el cursor por encima */
+#btnEviar:hover {
+    background-color: rgb(89, 224, 10);
+    color: aliceblue;
+}
+
+/* Estilos para el contenedor de resultados */
 #results-container {
     text-align: center;
     margin-top: 10%;
-    padding: 10px; 
+    padding: 10px;
+    margin-bottom: 50%;
 }
 
+.results-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+* Estilos para cada elemento dentro del contenedor de resultados */
+.results-container > div {
+    flex: 0 0 calc(50% - 20px);
+    margin: 10px;
+}
+
+/* Estilos para las imágenes de los resultados */
 #results-container img {
     width: 400px;
     object-fit: cover;
     border-radius: 5px;
     margin: 10px;
-  }
+}
 
+/* Estilos para el contenido de los controles */
+#controls-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15em;
+}
+
+/* Estilos para el mensaje de error */
+.error {
+    color: darkred;
+    font-size: 25px;
+}
+
+/* Estilos para el pie de página */
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 5%;
-    width: 100%;
+    flex-shrink: 0;
     text-align: center;
-    color: blue;
-  }
+    color: rgb(89, 224, 10);
+}
+
+/* Estilo responsive */
+/* Estilos para dispositivos con un ancho máximo de 768px */
+@media screen and (max-width: 768px) {
+    /* Estilos para el título principal */
+    main > h1 {
+        font-size: 24px;
+    }
+    /* Estilos para el subtitulo */
+    main > h4 {
+        font-size: 18px;
+        padding: 15px;
+    }
+    /* Estilos para los párrafos */
+    main > p {
+        font-size: 18px;
+        margin-bottom: 20px;
+        margin-top: 5%;
+    }
+    /* Estilos para el campo busqueda*/
+    #search {
+        font-size: 18px;
+    }
+    /* Estilos para el boton enviar*/
+    #btnEviar {
+        font-size: 18px;
+        padding: 8px 5%;
+    }
+    /* Estilos para el contenedor de los resultados*/
+    #results-container img {
+        width: 100%;
+    }
+}
